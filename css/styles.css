@@ -901,3 +901,28 @@ a {
 .callout-signup {
   transform: translateY(5rem);
 }
+.svg--small {
+  width: 40%;
+  padding: 0 2rem 0 2rem;
+}
+.svg--medium {
+  width: 70%;
+}
+.svg--double {
+  width: 45%;
+  margin-top: 7rem;
+}
+.feature__content .feature__list {
+  margin-bottom: 18rem;
+}
+#plans_jump {
+  color: var(--color-headings);
+  font-weight: bold;
+}
+.local_image {
+  padding: 2rem;
+}
+.icon__medium {
+  width: 55px;
+  height: 55px;
+}

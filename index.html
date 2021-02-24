@@ -2,43 +2,277 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Essentials Delivered Essentially." />
+    <meta property="og:title" content="Fleet... " />
+    <meta property="og:description" content="Fleet... " />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="https://" />
+    <title>Fleet- Essentials Delivered Essentially</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-right block__showcase">
+    <header>
+      <nav class="nav collapsible">
+        <a aria-label="Fleet" class="nav__brand" href="/"
+          ><img src="images/FleetWhite.svg" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Sign Up</a></li>
+          <li class="nav__item"><a href="#">Give a Gift</a></li>
+          <li class="nav__item"><a href="#">Availability</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+          <li class="nav__item"><a href="#">Coronavirus Updates</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 data-aos="fade-right" class="block__heading">
+            Essentials Delivered Essentially
+          </h1>
+          <p class="hero__tagline">
+            Weekly neighborhood delivery...Food, clothing, household repair
+            delivered right to your home.
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <picture data-aos="zoom-in">
+          <img class="hero__image" src="images/truck.svg" alt="" />
+        </picture>
+      </div>
+    </section>
+    <section data-aos="fade-up" class="block container block-domain">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>Plans starting at $10 per week</h2>
+      </header>
+      <div class="input-group">
+        <input
+          aria-label="Zip code"
+          type="text"
+          class="input"
+          placeholder="Enter zip code for availability..."
+        />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
+      </div>
+    </section>
+    <a id="available_plans">
+      <section data-aos="fade-up" class="block container block-plans">
+        <div class="grid grid--1x3">
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Plan A</h3>
+                <span class="plan__price">$10</span>
+                <span class="plan__billing-cycle">/week</span>
+                <span class="badge badge--secondary badge--small">10% OFF</span>
+                <span class="plan__description">Limited once per week</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">One delivery per week</li>
+                  <li class="list__item">Max of 60 items</li>
+                  <li class="list__item">All major retailers</li>
+                  <li class="list__item">2 Delivery day options</li>
+                </ul>
+                <button class="btn btn--outline btn--block">Join</button>
+              </div>
+            </div>
+          </div>
+          <div class="plan plan--popular">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Plan B</h3>
+                <span class="plan__price">$15</span>
+                <span class="plan__billing-cycle">/week</span>
+                <span class="badge badge--primary badge--small">10% OFF</span>
+                <span class="plan__description">Unlimited once per week</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">One delivery per week</li>
+                  <li class="list__item">Unlimited number of items</li>
+                  <li class="list__item">All major retailers</li>
+                  <li class="list__item">3 Delivery day options</li>
+                </ul>
+                <button class="btn btn--outline btn--block">Join</button>
+              </div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Plan C</h3>
+                <span class="plan__price">$20</span>
+                <span class="plan__billing-cycle">/week</span>
+                <span class="badge badge--secondary badge--small">10% OFF</span>
+                <span class="plan__description">Unlimited twice per week</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Two deilveries per week</li>
+                  <li class="list__item">Unlimited number of items</li>
+                  <li class="list__item">All major retailers</li>
+                  <li class="list__item">4 Delivery day options</li>
+                </ul>
+                <button class="btn btn--outline btn--block">Join</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </a>
+    <section class="block container">
+      <header class="block__header">
+        <h2>Changing the way Communities Shop</h2>
+        <p>Sign up neighbors for increased discounts and rewards.</p>
+      </header>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content" data-aos="fade-right">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to Use</h3>
+          <p>
+            Just download the Fleet app, create an account,<br />
+            and start shopping! Choose products from our major retail partners
+            and scheule your delivery. Sign up neighbors<br />
+            for increased discounts and rewards.
+          </p>
+
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="zoom-in-left">
+          <img
+            class="feature__image svg--double"
+            src="images/cell-phone.svg"
+            alt=""
+          />
+          <img
+            class="feature__image svg--double"
+            src="images/computer.svg"
+            alt=""
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content feature__list">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Choose from all major retailers</h3>
+          <p>
+            -Grocery, food, cleaning supplies, pets<br />
+            -Clothing, shoes, accessories <br />
+            -Medical/First Aid<br />
+            -Home Improvment, paint, tools, batteries<br />
+            -Electronics, TV, computers, mobile<br />
+            -Infant/Toddler, formula, diapers,
+          </p>
+
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <img
+            class="feature__image svg--small"
+            src="images/tools.svg"
+            alt=""
+          />
+          <img
+            class="feature__image svg--small"
+            src="images/groceries.svg"
+            alt=""
+          />
+          <img
+            class="feature__image svg--small"
+            src="images/band-aid.svg"
+            alt=""
+          />
+          <img
+            class="feature__image svg--small"
+            src="images/clothes.svg"
+            alt=""
+          />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">24/7 Expert Support</h3>
+          <p>
+            Customer service representatives are available 24 hours a day, 7
+            days a week by calling our customer service phone number, contacting
+            us via our customer portal, or through the app. Delivery updates in
+            real time available on the cusotmer dashboard.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture>
+          <img
+            class="feature__image svg--double"
+            src="images/phoneSupport.svg"
+            alt=""
+          />
+          <img
+            class="feature__image svg--double"
+            src="images/customer-service.svg"
+            alt=""
+          />
+        </picture>
+      </article>
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2>
+          Shop in your local economy<br />
+          supporting neighborhood jobs and businesses
+        </h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
-          <source
-            type="image/webp"
-            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-          />
-          <img src="images/ipad.png" alt="" />
+        <picture data-aos="fade-right" class="block-showcase__image">
+          <img class="local_image" src="images/local.jpg" alt="" />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#snap"></use>
-                </svg>
+                <picture>
+                  <img class="icon__medium" src="images/order.svg" alt="" />
+                </picture>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updates</h3>
+                <h3 class="media__title">
+                  Easy ordering and no hassle returns
+                </h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda dicta voluptate autem repellat corrupti molestias
-                  obcaecati atque delectus mollitia labore.
+                  Create an account on the our website or through the Fleet app
+                  to see the amazing products and services we offer and start
+                  shopping today.
                 </p>
               </div>
             </div>
@@ -46,16 +280,18 @@
           <li>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#growth"></use>
-                </svg>
+                <picture>
+                  <img class="icon__medium" src="images/time.svg" alt="" />
+                </picture>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Starting, GIT & WP-CLI</h3>
+                <h3 class="media__title">
+                  Spend your time following your passions
+                </h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda dicta voluptate autem repellat corrupti molestias
-                  obcaecati atque delectus mollitia labore.
+                  No more time consuming trips to the store fighting traffic and
+                  parking... Let Fleet help so you can enjoy more time with
+                  friends and family.
                 </p>
               </div>
             </div>
@@ -63,16 +299,16 @@
           <li>
             <div class="media">
               <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
+                <picture>
+                  <img class="icon__medium" src="images/family.svg" alt="" />
+                </picture>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Dynamic Caching & More</h3>
+                <h3 class="media__title">Keep your family healthy and safe</h3>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda dicta voluptate autem repellat corrupti molestias
-                  obcaecati atque delectus mollitia labore.
+                  Fleet will handle the long lines and crowds so you don't have
+                  to. Our contactless delivery options will ensure you and your
+                  family stay safe and secure.
                 </p>
               </div>
             </div>
@@ -80,5 +316,136 @@
         </ul>
       </div>
     </section>
+    <section class="block" data-aos="zoom-in">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/family.jpg" alt="A happy family" />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Fleet is a life saver. Their on time deliveries provide my
+                family and I with all of the supplies we need every week.
+                Between work and the kid's school schedule, Fleet lets us spend
+                our time as a family doing the things we love.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image">
+                    <svg class="icon icon--primary quote__line">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Pam Leftwich</h3>
+                    <p class="quote__organization">Boulder, Co</p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Just click the Get Started button or join a plan from the options
+              <a id="plans_jump" href="#available_plans">HERE</a>
+              and 10% off will automatically be deducted from your first week!
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible collapsible--expanded footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Availability</a></li>
+              <li><a href="#">Discounts/Rewards</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Company</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Support</h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="collapsible footer__section">
+          <div class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">
+              Retail Partners
+            </h2>
+            <svg class="icon icon--white collapsible__chevron">
+              <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Grocery</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Home Improvement</a></li>
+              <li><a href="#">Complete List</a></li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="images/fleetWhite.svg" alt="" />
+          <p class="footer__copyright">Copyright 2021 D.Haligowski</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
